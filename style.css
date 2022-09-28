@@ -1,0 +1,474 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    padding-bottom: 100vh;
+    background-color: #404142;
+}
+
+.Title{
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 100%;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+.Title h1{
+    color: aliceblue;
+    font-size: 35px;
+    font-family: 'Secular One', sans-serif;
+    border: 3px solid #4FCE5D;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: 20px 30px;
+}
+
+span{
+    color: #4FCE5D;
+}
+
+.plus {
+    width: 60px;
+    height: 60px;
+    margin-left:95% ;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid transparent;
+    border-radius:50% ;
+    -webkit-border-radius:50% ;
+    -moz-border-radius:50% ;
+    -ms-border-radius:50% ;
+    -o-border-radius:50% ;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    position: fixed;
+}
+
+.plus i {
+    color: #404142;
+    text-decoration: none;
+    text-align: center;
+    font-size: 27px;
+}
+
+.delete {
+    width: 60px;
+    height: 60px;
+    margin-left:95% ;
+    margin-top: 70px;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid transparent;
+    border-radius:50% ;
+    -webkit-border-radius:50% ;
+    -moz-border-radius:50% ;
+    -ms-border-radius:50% ;
+    -o-border-radius:50% ;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    position: fixed;
+}
+
+.delete i {
+    color: #404142;
+    text-decoration: none;
+    text-align: center;
+    font-size: 27px;
+}
+
+.delete:hover{
+    border: 5px solid #4FCE5D;
+    cursor: pointer;
+}
+
+
+.plus:hover{
+    border: 5px solid #4FCE5D;
+    cursor: pointer;
+}
+
+.road{
+    width: 800px;
+    padding-bottom: 100px;
+    margin: 0 auto;
+    margin-top: 100px;
+    border: 3px solid #4FCE5D;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 60px;
+}
+
+.hidden{
+    width: 800px;
+    padding: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -400px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: local;
+    margin-left: 400px;
+    margin-top:-500px ;
+    position: fixed;
+    background: linear-gradient(rgba(0,0,0,0.7) , rgba(0,0,0,0.7));
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.content{
+    margin-top: 250px;
+}
+
+input{
+    padding: 150px 200px;
+    border: none;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    background-color:antiquewhite;
+}
+
+button{
+    padding: 20px 30px;
+    border: none;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    margin-top: 20px;
+    margin-left: 140px;
+    cursor: pointer;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    font-size: 15px;
+}
+
+#add:hover{
+    background-color: grey;
+    color: aliceblue;
+}
+
+#cancel:hover{
+    background-color: grey;
+    color: aliceblue;
+}
+
+#add{
+    background-color: #4FCE5D;
+    color: #404142;
+}
+
+#cancel{
+    background-color: #404142;
+    color: #4FCE5D;
+}
+
+::placeholder{
+    color: #404142;
+    font-size: 25px;
+    border: none;
+}
+
+.active{
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.note{
+    padding: 150px 200px;
+    border: none;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    background-color:antiquewhite;
+    color: #404142;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.note:hover{
+    background-color: rgb(170, 168, 165);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+
+    body{
+        width: 100%;
+        padding-bottom: 100vh;
+        background-color: #404142;
+    }
+
+    .Title{
+    margin: 0 auto;
+    margin-top: 21px;
+    width: 100%;
+    padding-bottom: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .Title h1{
+        color: aliceblue;
+        font-size: 14px;
+        font-family: 'Secular One', sans-serif;
+        border: 1.5px solid #4FCE5D;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        padding: 20px 30px;
+    }
+
+    span{
+        color: #4FCE5D;
+    }
+
+    .plus {
+        width: 25px;
+        height: 25px;
+        margin-left:92% ;
+        background-color: antiquewhite;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2.5px solid transparent;
+        border-radius:50% ;
+        -webkit-border-radius:50% ;
+        -moz-border-radius:50% ;
+        -ms-border-radius:50% ;
+        -o-border-radius:50% ;
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+        position: fixed;
+    }
+
+    .plus i {
+        color: #404142;
+        text-decoration: none;
+        text-align: center;
+        font-size: 11px;
+    }
+
+    .plus:hover{
+    border: 2.5px solid #4FCE5D;
+    cursor: pointer;
+    }
+
+    .delete {
+        width: 25px;
+        height: 25px;
+        margin-left:92% ;
+        background-color: antiquewhite;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2.5px solid transparent;
+        border-radius:50% ;
+        -webkit-border-radius:50% ;
+        -moz-border-radius:50% ;
+        -ms-border-radius:50% ;
+        -o-border-radius:50% ;
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+        position: fixed;
+        margin-top: 70px;
+    }
+
+    .delete i {
+        color: #404142;
+        text-decoration: none;
+        text-align: center;
+        font-size: 11px;
+    }
+
+    .delete:hover{
+    border: 2.5px solid #4FCE5D;
+    cursor: pointer;
+    }
+
+    .road{
+        width: 336px;
+        padding-bottom: 42px;
+        margin: 0 auto;
+        margin-top: 42px;
+        border: 1.2px solid #4FCE5D;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        padding: 25px;
+    }
+
+    .hidden{
+        width: 100%;
+        height: 100%;
+        background: linear-gradient( rgba(0,0,0,0.7) , rgba(0,0,0,0.7) );
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: -168px;
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-attachment: local;
+    }
+
+    .content{
+        margin-top: 105px;
+    }
+
+    input{
+        padding: 63px 84px;
+        border: none;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+        background-color:antiquewhite;
+    }
+
+    button{
+        padding: 20px 30px;
+        border: none;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+        margin-top: 20px;
+        margin-left: 140px;
+        cursor: pointer;
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+        font-size: 6px;
+    }
+
+    #add:hover{
+        background-color: grey;
+        color: aliceblue;
+    }
+
+    #cancel:hover{
+        background-color: grey;
+        color: aliceblue;
+    }
+
+    #add{
+        background-color: #4FCE5D;
+        color: #404142;
+    }
+
+    #cancel{
+        background-color: #404142;
+        color: #4FCE5D;
+    }
+
+    ::placeholder{
+        color: #404142;
+        font-size: 10px;
+        border: none;
+    }
+
+    .active{
+        transform: scale(0);
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+    }
+
+    .note{
+        padding: 63px 84px;
+        border: none;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+        background-color:antiquewhite;
+        color: #404142;
+        font-size: 10px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+
+}

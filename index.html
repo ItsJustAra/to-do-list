@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css" >
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/946cbaf3e4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+        <div class="Title">
+            <h1>To Do <span>List</span></h1>
+        </div>
+    
+        <div class="plus" id="plus">
+            <i class="fa-solid fa-plus"></i>
+        </div>
+
+        <div class="delete" id="delete">
+            <i class="fa-solid fa-trash"></i>
+        </div>
+    
+        <div class="road" id="road">
+    
+        </div>
+    
+        <div id="hidden" class="hidden active">
+    
+            <div class="content">
+                <div class="input">
+                    <input type="text" id="text" placeholder="type here">
+                </div>
+        
+                <div class="btns">
+                    <button type="button" id="add">Add</button> <button type="button" id="cancel">Cancel</button>
+                </div>
+            </div>
+        </div>
+
+    <script src="func.js" ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="aos-master/aos-master/src/js/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>
